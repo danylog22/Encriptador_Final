@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_encriptador.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <img src="img/Logo-1.png" alt="">
+        </div>
+    </header>   
+    
+    <div class="container">
+        <div class="texto-encriptar">
+            <textarea id="input-text" placeholder="Ingrese aqui el texto" class="texto-encript" cols="30"
+                rows="10"></textarea>
+            <p class="condicion"><img src="img/Vector.png"> Solo letras minusculas y sin acentos</p>
+            <button id="encriptar" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button id="desencriptar" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+
+        </div>
+
+        <div class="imagen-texto">
+            <img id="img-m" class="img-muneco" src="img/Muñeco.png" alt="">
+            <h2 id="h2-img" class="h2-leyenda">Ningun mensaje fue encontrado</h2>
+            <p id="p-img" class="p-leyenda">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <div class="text-area2" id="text-resultado">
+                <textarea id="res" class="resultado-encriptado" cols="30" rows="10"></textarea>
+                <button class="btn-copiar" id="copy" onclick="copiarTexto()">Copiar</button>
+            </div>
+
+        </div>
+
+        <div class="botones">
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        &copy Oscar Garcia - Encriptador 2023
+    </footer>
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
